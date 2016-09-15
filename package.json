@@ -1,0 +1,57 @@
+{
+  "name": "react-dropzone",
+  "description": "A Dropzone Component for ReactJS",
+  "version": "1.0.0",
+  "license": "MIT",
+  "repository": "https://github.com/pqminh/react-dropzone",
+  "maintainers": [
+    {
+      "name": "Minhpq",
+      "email": "pqminh31100@gmail.com",
+      "web": ""
+    }
+  ],
+  "peerDependencies": {
+    "react-dom": "^0.14.0 || >0.14.0 || ^15.0.1",
+    "react": ">=0.13 || >0.14.0-alpha || >0.14.0 || ^15.0.1"
+  },
+  "devDependencies": {
+    "babel-jest": "^6.0.1",
+    "babel-preset-react": "^6.5.0",
+    "del": "^1.1.1",
+    "gulp": "^3.8.11",
+    "gulp-header": "^1.2.2",
+    "gulp-jshint": "^1.9.4",
+    "gulp-plumber": "^1.0.0",
+    "gulp-react": "^3.0.1",
+    "gulp-rename": "^1.2.0",
+    "gulp-streamify": "0.0.5",
+    "gulp-uglify": "^1.1.0",
+    "gulp-util": "^3.0.4",
+    "jest-cli": "^0.8.1",
+    "jshint-stylish": "^1.0.1",
+    "react": "^15.3.1",
+    "react-addons-test-utils": "^15.3.1",
+    "react-dom": "^15.3.1",
+    "react-tools": "^0.13.3",
+    "reactify": "^1.1.1",
+    "tape": "^3.5.0",
+    "webpack-stream": "^3.1.0"
+  },
+  "dependencies": {
+    "dropzone": "^4.3.0"
+  },
+  "scripts": {
+    "build": "gulp bundle-js",
+    "watch": "gulp watch",
+    "test": "jest"
+  },
+  "jest": {
+    "scriptPreprocessor": "<rootDir>/preprocessor.js",
+    "unmockedModulePathPatterns": [
+      "<rootDir>/node_modules/*"
+    ]
+  },
+  "main": "lib/react-dropzone.js",
+  "standalone": "React-Dropzone"
+}
